@@ -9,6 +9,7 @@ import {
 } from 'lucide-react';
 import { Product, MarketplaceId } from '../types';
 import { useConfig } from '../context/ConfigContext';
+import { trackMarketplaceRedirect } from '../utils/analytics';
 
 interface ProductCardProps {
   product: Product;
@@ -30,6 +31,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
     const destination = linkUrl || (mpConfig ? mpConfig.storeUrl : '');
 
     if (destination && destination.trim().length > 0) {
+      trackMarketplaceRedirect(product.name, mpConfig ? mpConfig.name : marketplaceId, destination);
       window.open(destination, '_blank', 'noopener,noreferrer');
     } else {
       // If no valid link, prompt WhatsApp inquiry

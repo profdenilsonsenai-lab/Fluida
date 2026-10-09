@@ -14,6 +14,7 @@ import {
 } from 'lucide-react';
 import { useConfig } from '../context/ConfigContext';
 import { MarketplaceId } from '../types';
+import { trackMarketplaceRedirect } from '../utils/analytics';
 
 export const ProductDetailModal: React.FC = () => {
   const {
@@ -57,6 +58,7 @@ export const ProductDetailModal: React.FC = () => {
     const destination = linkUrl || (mpConfig ? mpConfig.storeUrl : '');
 
     if (destination && destination.trim().length > 0) {
+      trackMarketplaceRedirect(product.name, mpConfig ? mpConfig.name : marketplaceId, destination);
       window.open(destination, '_blank', 'noopener,noreferrer');
     } else {
       triggerWhatsApp(product.name);

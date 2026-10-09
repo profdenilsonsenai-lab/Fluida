@@ -2,6 +2,7 @@ import React, { createContext, useContext, useState, useEffect } from 'react';
 import { SiteConfig, Product, MarketplaceId } from '../types';
 import { INITIAL_CONFIG } from '../data/config';
 import { PRODUCTS } from '../data/products';
+import { trackWhatsAppLead, trackViewProduct, trackCatalogSearch } from '../utils/analytics';
 
 interface ConfigContextType {
   config: SiteConfig;
@@ -160,8 +161,14 @@ export const ConfigProvider: React.FC<{ children: React.ReactNode }> = ({ childr
       message = `Olá! Estou no site da FLUIDA e gostaria de informações sobre este produto: ${productName}.`;
     }
 
+    trackWhatsAppLead(productName);
     const whatsappUrl = `https://wa.me/${rawNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+  };
+
+  const handleSetSearchQuery = (q: string) => {
+    setSearchQuery(q);
+    trackCatalogSearch(q);
   };
 
   return (
@@ -178,10 +185,13 @@ export const ConfigProvider: React.FC<{ children: React.ReactNode }> = ({ childr
         searchQuery,
         selectedCategory,
         selectedBrand,
-        setSearchQuery,
+        setSearchQuery: handleSetSearchQuery,
         setSelectedCategory,
         setSelectedBrand,
-        openProductModal: (p) => setActiveProductModal(p),
+        openProductModal: (p) => {
+          trackViewProduct(p);
+          setActiveProductModal(p);
+        },
         closeProductModal: () => setActiveProductModal(null),
         openConfigDrawer: () => setActiveConfigDrawer(true),
         closeConfigDrawer: () => setActiveConfigDrawer(false),
