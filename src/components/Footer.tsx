@@ -21,7 +21,6 @@ export const Footer: React.FC = () => {
     openLegalModal,
     openConfigDrawer,
     setSelectedCategory,
-    openProjectModal,
     openAdvisoryModal,
     openTrainingModal,
   } = useConfig();
@@ -113,17 +112,9 @@ export const Footer: React.FC = () => {
           {/* Col 4: Soluções & Serviços Técnicos */}
           <div className="space-y-3">
             <h4 className="text-xs font-bold text-white uppercase tracking-wider">
-              Serviços & Projeto
+              Serviços & Cursos
             </h4>
             <ul className="space-y-2 text-xs text-slate-300">
-              <li>
-                <button
-                  onClick={openProjectModal}
-                  className="hover:text-[#35C6A4] transition-colors text-left cursor-pointer flex items-center gap-1.5 font-medium"
-                >
-                  <span>Dimensionar Seu Projeto</span>
-                </button>
-              </li>
               <li>
                 <button
                   onClick={openAdvisoryModal}

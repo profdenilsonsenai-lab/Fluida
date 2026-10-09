@@ -20,7 +20,6 @@ import { WhatsAppModal } from './components/WhatsAppModal';
 import { GuideDetailModal } from './components/GuideDetailModal';
 import { LegalModals } from './components/LegalModals';
 import { ConfigDrawer } from './components/ConfigDrawer';
-import { ProjectCalculatorModal } from './components/ProjectCalculatorModal';
 import { AdvisoryModal } from './components/AdvisoryModal';
 import { TrainingModal } from './components/TrainingModal';
 
@@ -52,7 +51,6 @@ export default function App() {
         <GuideDetailModal />
         <LegalModals />
         <ConfigDrawer />
-        <ProjectCalculatorModal />
         <AdvisoryModal />
         <TrainingModal />
       </div>

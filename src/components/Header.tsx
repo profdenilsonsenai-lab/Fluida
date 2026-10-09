@@ -12,7 +12,6 @@ import {
   Layers,
   HelpCircle,
   ExternalLink,
-  Calculator,
   ClipboardCheck,
   GraduationCap,
 } from 'lucide-react';
@@ -29,7 +28,6 @@ export const Header: React.FC = () => {
     searchQuery,
     setSearchQuery,
     setSelectedCategory,
-    openProjectModal,
     openAdvisoryModal,
     openTrainingModal,
   } = useConfig();
@@ -208,16 +206,6 @@ export const Header: React.FC = () => {
               Ver produtos
             </button>
 
-            {/* Botão Seu Projeto */}
-            <button
-              onClick={openProjectModal}
-              className="text-[#073B66] hover:text-[#00A6D6] font-semibold transition-colors whitespace-nowrap cursor-pointer flex items-center gap-1.5 px-2.5 py-1 bg-[#E8F7FC] hover:bg-[#d5f1fa] rounded-lg border border-[#00A6D6]/30"
-              title="Calcule e dimensione os equipamentos da sua piscina"
-            >
-              <Calculator className="w-3.5 h-3.5 text-[#00A6D6]" />
-              <span>Seu Projeto</span>
-            </button>
-
             {/* Botão Assessoria */}
             <button
               onClick={openAdvisoryModal}
@@ -321,20 +309,6 @@ export const Header: React.FC = () => {
 
             {/* Ações Técnicas e Serviços no Mobile */}
             <div className="pt-2 grid grid-cols-1 gap-1.5">
-              <button
-                onClick={() => {
-                  setMobileMenuOpen(false);
-                  openProjectModal();
-                }}
-                className="w-full text-left py-2 px-3 rounded-lg text-xs font-semibold text-[#073B66] bg-[#E8F7FC] flex items-center justify-between"
-              >
-                <span className="flex items-center gap-2">
-                  <Calculator className="w-4 h-4 text-[#00A6D6]" />
-                  <span>Seu Projeto (Dimensionamento)</span>
-                </span>
-                <span className="text-[10px] text-[#00A6D6] font-bold">Simular</span>
-              </button>
-
               <button
                 onClick={() => {
                   setMobileMenuOpen(false);
