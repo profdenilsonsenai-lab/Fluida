@@ -1,0 +1,101 @@
+import { GuideArticle } from '../types';
+
+export const GUIDES: GuideArticle[] = [
+  {
+    id: 'guia-escolha-motobomba',
+    slug: 'como-escolher-uma-motobomba',
+    title: 'Como escolher a motobomba ideal para o volume da sua piscina',
+    summary: 'Entenda os cálculos de vazão horária, perda de carga e potência para dimensionar a bomba sem desperdício de energia ou subdimensionamento.',
+    readingTime: '4 min de leitura',
+    category: 'Dimensionamento',
+    content: [
+      'A escolha correta da motobomba é fundamental para garantir a recirculação e a filtragem completa da água sem sobrecarregar a instalação elétrica.',
+      'O primeiro passo consiste em calcular o volume total da piscina em metros cúbicos (Comprimento × Largura × Profundidade média). Pela norma brasileira ABNT NBR 10339, o volume de piscinas residenciais privativas deve ser recirculado em um período médio de 6 a 8 horas.',
+      'Dividindo o volume total pelo tempo de recirculação desejado, você obtém a vazão mínima necessária da bomba em metros cúbicos por hora (m³/h).',
+      'É imprescindível atentar para a compatibilidade entre a bomba e o filtro: uma motobomba potente demais em um filtro menor fará com que a água passe com velocidade excessiva pela camada de areia, empurrando a sujeira de volta para a piscina.',
+    ],
+    tips: [
+      'Verifique a bitola dos tubos existentes (geralmente 50 mm ou 60 mm).',
+      'Confirme se a tensão no local da instalação é 110V ou 220V antes de adquirir.',
+      'Bombas autoescorvantes facilitam a partida mesmo quando instaladas levemente acima do nível da água.',
+    ],
+    relatedCategories: ['motobombas', 'filtros'],
+  },
+  {
+    id: 'guia-filtro-de-areia',
+    slug: 'para-que-serve-um-filtro-de-piscina',
+    title: 'Para que serve um filtro de piscina e como funciona a filtração por areia',
+    summary: 'Descubra a função do leito filtrante, a importância da retrolavagem periódica e quando substituir o elemento filtrante.',
+    readingTime: '3 min de leitura',
+    category: 'Filtração',
+    content: [
+      'Enquanto os tratamentos químicos desinfetam a água e eliminam microrganismos, o filtro de piscina realiza o tratamento físico, retendo partículas em suspensão como poeira, pólen e resíduos orgânicos.',
+      'No filtro de areia, a água pressurizada pela motobomba entra pelo topo do tanque e passa sob pressão pelos grãos de areia sílica ou vidro ativado, que retêm as impurezas nos microespaços entre os grãos.',
+      'Com o passar dos dias, o acúmulo de sujeira eleva a pressão interna do tanque — indicada pelo manômetro da válvula multivias. Quando o ponteiro sobe em relação à pressão inicial limpa, é hora de efetuar a retrolavagem (operação que inverte o fluxo de água e descarrega os resíduos acumulados no esgoto).',
+    ],
+    tips: [
+      'A areia comum deve ser trocada a cada 2 a 3 anos em piscinas residenciais.',
+      'O vidro filtrante possui maior durabilidade e menor necessidade de retrolavagens frequentes.',
+      'Sempre desligue a motobomba antes de girar a alavanca da válvula seletora.',
+    ],
+    relatedCategories: ['filtros', 'valvulas-conexoes'],
+  },
+  {
+    id: 'guia-manutencao-preventiva',
+    slug: 'como-organizar-a-manutencao-da-piscina',
+    title: 'Como organizar a rotina de manutenção preventiva semanal',
+    summary: 'Cronograma passo a passo para manter a água cristalina o ano todo, reduzindo custos com produtos químicos emergenciais.',
+    readingTime: '5 min de leitura',
+    category: 'Manutenção',
+    content: [
+      'A manutenção preventiva regular é muito mais econômica e simples do que recuperar uma piscina com água turva ou tomada por algas.',
+      'Uma rotina eficiente é dividida em três fases principais: limpeza física de superfície (remover folhas com a peneira e limpar o cesto do skimmer e da bomba), escovação periódica das paredes e do fundo para desprender o biofilme, e a aspiração do fundo.',
+      'Aliada à limpeza mecânica, a filtração diária (geralmente programada por timer automático durante 4 a 6 horas) garante que os sanitizantes distribuam-se homogeneamente por toda a lâmina d’água.',
+    ],
+    tips: [
+      'Escove as paredes antes de aspirar para que os resíduos sedimentem no fundo.',
+      'Mantenha o cesto de pré-filtro da motobomba sempre limpo para não forçar o motor.',
+      'Cubra a piscina com capa térmica ou de proteção quando não estiver em uso para reduzir evaporação e entrada de poeira.',
+    ],
+    relatedCategories: ['limpeza-acessorios', 'robos-piscinas'],
+  },
+  {
+    id: 'guia-equipamentos-limpeza',
+    slug: 'como-escolher-equipamentos-de-limpeza',
+    title: 'Equipamentos manuais vs. robôs automáticos de limpeza',
+    summary: 'Compare praticidade, economia de tempo e consumo de água para decidir entre acessórios manuais e robôs elétricos autônomos.',
+    readingTime: '4 min de leitura',
+    category: 'Tecnologia',
+    content: [
+      'A aspiração manual convencional com mangueira flutuante e cabo telescópico exige tempo dedicado do proprietário ou contratação recorrente de um tratador de piscinas.',
+      'Além disso, em aspirações manuais com descarte para o esgoto (dreno), perdem-se centenas de litros de água tratada a cada ciclo de limpeza pesada.',
+      'Os robôs automáticos elétricos (como a linha Zodiac) operam de maneira totalmente independente da casa de máquinas: possuem motor e filtro próprios, capturando as partículas em um cesto interno lavável sem descartar nenhuma gota de água.',
+    ],
+    tips: [
+      'Piscinas com muitas folhas no entorno se beneficiam enormemente de robôs com cesto de grande capacidade.',
+      'Para paredes e linha d’água, confira se o modelo do robô possui tração para escalada vertical.',
+      'Acessórios manuais de qualidade continuam sendo indispensáveis para intervenções pontuais e cantos específicos.',
+    ],
+    relatedCategories: ['robos-piscinas', 'limpeza-acessorios'],
+  },
+  {
+    id: 'guia-qualidade-da-agua',
+    slug: 'cuidados-basicos-com-a-qualidade-da-agua',
+    title: 'Cuidados básicos com os parâmetros químicos e qualidade da água',
+    summary: 'Entenda como controlar pH, alcalinidade total e cloro livre para garantir segurança sanitária e conforto aos olhos e pele.',
+    readingTime: '4 min de leitura',
+    category: 'Tratamento',
+    content: [
+      'Uma água cristalina aos olhos não significa necessariamente uma água bacteriologicamente segura. O equilíbrio químico é composto por três pilares interligados: Alcalinidade Total, pH e Teor de Cloro Livre.',
+      'A alcalinidade atua como um amortecedor (tampão) para o pH. Quando a alcalinidade está entre 80 e 120 ppm, o pH permanece estável. Se a alcalinidade estiver desregulada, o pH oscilará constantemente.',
+      'O pH deve ser mantido entre 7,2 e 7,6. Valores abaixo de 7,2 tornam a água ácida (corrosiva para tubulações e equipamentos, causando ardência nos olhos). Valores acima de 7,6 reduzem drasticamente o poder desinfetante do cloro.',
+      'O cloro livre residual ideal situa-se entre 1,0 e 3,0 ppm para garantir que bactérias e microrganismos sejam neutralizados continuamente.',
+    ],
+    tips: [
+      'Meça os parâmetros pelo menos duas vezes por semana com fitas de teste ou kit comparador.',
+      'Sistemas de eletrólise salina (geradores de cloro) mantêm o cloro estável de forma automática e suave.',
+      'Nunca adicione produtos químicos com banhistas dentro da água.',
+    ],
+    relatedCategories: ['tratamento-quimico', 'geradores-cloro'],
+  },
+];

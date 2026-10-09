@@ -1,0 +1,8 @@
+{
+  "name": "FLUIDA — Vitrine Digital para Piscinas",
+  "description": "Vitrine digital profissional de produtos e equipamentos para piscinas das marcas Fluidra e parceiras, com direcionamento para marketplaces e atendimento via WhatsApp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
