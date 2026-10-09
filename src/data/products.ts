@@ -10,7 +10,7 @@ export const PRODUCTS: Product[] = [
     sku: 'FL-SENA-100',
     description: 'Motobomba centrífuga autoescorvante de alta vazão e baixo nível sonoro, fabricada em polipropileno com fibra de vidro. Projetada para circulação contínua e filtragem eficaz em piscinas residenciais.',
     images: [
-      '/src/assets/images/product_motobomba_pool_1791514738449.jpg',
+      '/images/product_motobomba_pool_1791514738449.jpg',
     ],
     specs: [
       { label: 'Potência nominal', value: '1,0 CV (0,75 kW)' },
@@ -53,7 +53,7 @@ export const PRODUCTS: Product[] = [
     sku: 'FL-CANT-600',
     description: 'Tanque filtrante monobloco injetado em resina termoplástica de alta resistência mecânica e proteção contra radiação UV. Acompanha válvula seletora de 6 vias para filtragem, retrolavagem, enxágue, recirculação, esgotamento e fechamento.',
     images: [
-      '/src/assets/images/product_pool_filter_1791514747211.jpg',
+      '/images/product_pool_filter_1791514747211.jpg',
     ],
     specs: [
       { label: 'Diâmetro do tanque', value: '600 mm' },
@@ -93,7 +93,7 @@ export const PRODUCTS: Product[] = [
     sku: 'ZD-TNX-3200',
     description: 'Robô autônomo elétrico desenvolvido para limpeza eficiente de fundo e paredes. Sistema de deslocamento inteligente com esteiras tracionadas, peso ultraleve para fácil retirada da água e acesso superior rápido ao cesto de filtro.',
     images: [
-      '/src/assets/images/product_robot_cleaner_1791514755912.jpg',
+      '/images/product_robot_cleaner_1791514755912.jpg',
     ],
     specs: [
       { label: 'Zonas de limpeza', value: 'Fundo e paredes' },
@@ -137,7 +137,7 @@ export const PRODUCTS: Product[] = [
     sku: 'AP-LUM-V1',
     description: 'Projetor LED subaquático de alta luminosidade com acabamento frontal em aço inoxidável AISI 316. Garante ampla dispersão de feixe luminoso e alta economia de energia em comparação às lâmpadas halógenas convencionais.',
     images: [
-      '/src/assets/images/product_led_lighting_1791514764896.jpg',
+      '/images/product_led_lighting_1791514764896.jpg',
     ],
     specs: [
       { label: 'Potência de consumo', value: '16 W' },
@@ -177,7 +177,7 @@ export const PRODUCTS: Product[] = [
     sku: 'AP-SNEXT-12',
     description: 'Sistema avançado de eletrólise salina para desinfecção contínua da água da piscina. Gera cloro natural a partir do sal dissolvido na água, evitando irritação nos olhos, ressecamento da pele e manuseio de cloro concentrado.',
     images: [
-      '/src/assets/images/product_motobomba_pool_1791514738449.jpg',
+      '/images/product_motobomba_pool_1791514738449.jpg',
     ],
     specs: [
       { label: 'Produção nominal de cloro', value: '12 g/h de cloro livre ativo' },
@@ -216,7 +216,7 @@ export const PRODUCTS: Product[] = [
     sku: 'AP-PHEAT-11K',
     description: 'Trocador de calor com tecnologia Full-Inverter e fluido refrigerante ecológico R32. Ajusta automaticamente a rotação do compressor e ventilador para maximizar o COP (coeficiente de desempenho) com baixíssimo ruído.',
     images: [
-      '/src/assets/images/product_pool_filter_1791514747211.jpg',
+      '/images/product_pool_filter_1791514747211.jpg',
     ],
     specs: [
       { label: 'Capacidade térmica', value: '11,0 kW (ar 27°C / água 27°C)' },
@@ -251,7 +251,7 @@ export const PRODUCTS: Product[] = [
     sku: 'CP-VALV-6V',
     description: 'Válvula multivias de acionamento manual por alavanca superior com 6 funções essenciais de operação do filtro. Produzida em termoplástico injetado com componentes de vedação em EPDM de alta durabilidade.',
     images: [
-      '/src/assets/images/product_pool_filter_1791514747211.jpg',
+      '/images/product_pool_filter_1791514747211.jpg',
     ],
     specs: [
       { label: 'Conexões', value: 'Roscáveis de 1½" (fêmea)' },
@@ -288,7 +288,7 @@ export const PRODUCTS: Product[] = [
     sku: 'AP-KIT-CLEAN',
     description: 'Conjunto completo de ferramentas manuais ergonômicas para manutenção regular da água e das superfícies da piscina. Inclui aspirador asa-delta com cerdas, peneira tipo bolsa funda, escova curva de nylon e termômetro flutuante.',
     images: [
-      '/src/assets/images/product_robot_cleaner_1791514755912.jpg',
+      '/images/product_robot_cleaner_1791514755912.jpg',
     ],
     specs: [
       { label: 'Itens inclusos', value: '1 Aspirador com escova, 1 Peneira saco folha, 1 Escova 45 cm, 1 Termômetro' },
@@ -329,7 +329,7 @@ export const PRODUCTS: Product[] = [
     sku: 'FL-CLORO-10K',
     description: 'Desinfetante de rápida dissolução para manutenção e cloração de choque. Contém estabilizador de cloro que reduz a degradação solar pelos raios ultravioleta, mantendo o residual protetor por muito mais tempo.',
     images: [
-      '/src/assets/images/product_pool_filter_1791514747211.jpg',
+      '/images/product_pool_filter_1791514747211.jpg',
     ],
     specs: [
       { label: 'Teor de cloro ativo', value: '60% de cloro disponível' },
@@ -366,7 +366,7 @@ export const PRODUCTS: Product[] = [
     sku: 'AP-ROT-VIC100',
     description: 'Peça de reposição genuína com rotor injetado em Noryl balanceado dinamicamente e selo mecânico em cerâmica e grafite com mola em aço inox AISI 316. Garante a restauração do rendimento hidráulico original e estanqueidade total.',
     images: [
-      '/src/assets/images/product_motobomba_pool_1791514738449.jpg',
+      '/images/product_motobomba_pool_1791514738449.jpg',
     ],
     specs: [
       { label: 'Aplicação específica', value: 'Bombas AstralPool Victoria Plus e Victoria Plus Silent' },

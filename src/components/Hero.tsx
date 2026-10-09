@@ -18,7 +18,7 @@ export const Hero: React.FC = () => {
       {/* Background Image with Measured Contrast Scrim */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/src/assets/images/hero_crystal_pool_1791514727848.jpg"
+          src="/images/hero_crystal_pool.jpg"
           alt="Piscina residencial contemporânea com água límpida e cristalina"
           className="w-full h-full object-cover object-center"
           referrerPolicy="no-referrer"

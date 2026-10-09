@@ -113,7 +113,7 @@ export const ProductDetailModal: React.FC = () => {
             <div className="space-y-3">
               <div className="aspect-4/3 w-full bg-slate-50 rounded-xl overflow-hidden border border-slate-200/70 flex items-center justify-center">
                 <img
-                  src={product.images[selectedImgIdx] || product.images[0]}
+                  src={(product.images[selectedImgIdx] || product.images[0] || '').replace('/src/assets/images/', '/images/')}
                   alt={product.name}
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover"
@@ -133,7 +133,7 @@ export const ProductDetailModal: React.FC = () => {
                       }`}
                     >
                       <img
-                        src={img}
+                        src={img.replace('/src/assets/images/', '/images/')}
                         alt=""
                         referrerPolicy="no-referrer"
                         className="w-full h-full object-cover"

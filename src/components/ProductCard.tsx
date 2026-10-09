@@ -37,7 +37,9 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
     }
   };
 
-  const primaryImage = product.images[0];
+  const primaryImage = product.images[0]
+    ? product.images[0].replace('/src/assets/images/', '/images/')
+    : '';
 
   return (
     <div
