@@ -60,6 +60,28 @@ export const trackMarketplaceRedirect = (
 };
 
 /**
+ * Registra o início de checkout via Stripe (begin_checkout)
+ */
+export const trackStripeCheckout = (
+  productName: string,
+  price?: number | null,
+  stripeUrl?: string
+) => {
+  trackEvent('begin_checkout', {
+    currency: 'BRL',
+    value: price || undefined,
+    payment_channel: 'stripe',
+    checkout_url: stripeUrl,
+    items: [
+      {
+        item_name: productName,
+        price: price || undefined,
+      },
+    ],
+  });
+};
+
+/**
  * Registra a conversão de contato pelo WhatsApp (generate_lead)
  */
 export const trackWhatsAppLead = (productName?: string) => {

@@ -3,10 +3,10 @@ import { Product } from '../types';
 export const PRODUCTS: Product[] = [
   {
     id: 'motobomba-astralpool-sena-1cv',
-    name: 'Motobomba Autoescorvante AstralPool Sena 1.0 CV',
+    name: 'Bomba de Filtro AstralPool',
     brand: 'AstralPool',
     category: 'motobombas',
-    categoryName: 'Motobombas',
+    categoryName: 'Equipamentos',
     sku: 'FL-SENA-100',
     description: 'Motobomba centrífuga autoescorvante de alta vazão e baixo nível sonoro, fabricada em polipropileno com fibra de vidro. Projetada para circulação contínua e filtragem eficaz em piscinas residenciais.',
     images: [
@@ -27,12 +27,13 @@ export const PRODUCTS: Product[] = [
     ],
     compatibility: 'Compatível com filtros de areia AstralPool de 500 mm a 600 mm de diâmetro.',
     installGuidelines: 'Instalar em piso nivelado e arejado na casa de máquinas, abaixo ou no mesmo nível da linha d’água da piscina. Realizar aterramento elétrico conforme normas ABNT NBR 5410.',
-    price: null, // Preço a consultar no canal de compra
-    lastPriceUpdate: null,
+    price: 1490.00,
+    lastPriceUpdate: '2026-10-09',
+    stripePaymentUrl: 'https://buy.stripe.com/test_fZueVfcpC5A12SB98KcV20a',
     marketplaceLinks: [
       {
         marketplaceId: 'mercadoLivre',
-        url: '', // configurável no painel
+        url: '',
         notes: 'Verificar disponibilidade e opções de frete no Mercado Livre',
       },
       {
@@ -46,10 +47,10 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'filtro-areia-astralpool-cantabric-600',
-    name: 'Filtro de Areia Cantabric Ø 600 mm com Válvula Seletora 6 Vias',
+    name: 'Filtro de Areia D300',
     brand: 'AstralPool',
     category: 'filtros',
-    categoryName: 'Filtros e Filtração',
+    categoryName: 'Filtros',
     sku: 'FL-CANT-600',
     description: 'Tanque filtrante monobloco injetado em resina termoplástica de alta resistência mecânica e proteção contra radiação UV. Acompanha válvula seletora de 6 vias para filtragem, retrolavagem, enxágue, recirculação, esgotamento e fechamento.',
     images: [
@@ -69,8 +70,9 @@ export const PRODUCTS: Product[] = [
     ],
     compatibility: 'Dimensionamento ideal para motobombas de 0,75 CV a 1,0 CV.',
     installGuidelines: 'Abastecer com água até a metade antes de despejar a areia para proteger os braços coletores inferiores. Realizar retrolavagem prévia antes da primeira operação.',
-    price: null,
-    lastPriceUpdate: null,
+    price: 890.00,
+    lastPriceUpdate: '2026-10-09',
+    stripePaymentUrl: 'https://buy.stripe.com/test_5kQ4gB9dq0fH78R84GcV20b',
     marketplaceLinks: [
       {
         marketplaceId: 'mercadoLivre',
@@ -86,10 +88,10 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'robo-limpador-zodiac-tornax-rt3200',
-    name: 'Robô Aspirador Automático Zodiac TornaX RT 3200',
+    name: 'Robô Aspirador de Piscina',
     brand: 'Zodiac',
     category: 'robos-piscinas',
-    categoryName: 'Robôs para Piscinas',
+    categoryName: 'Limpeza Automatizada',
     sku: 'ZD-TNX-3200',
     description: 'Robô autônomo elétrico desenvolvido para limpeza eficiente de fundo e paredes. Sistema de deslocamento inteligente com esteiras tracionadas, peso ultraleve para fácil retirada da água e acesso superior rápido ao cesto de filtro.',
     images: [
@@ -109,8 +111,9 @@ export const PRODUCTS: Product[] = [
     ],
     compatibility: 'Funciona de forma independente do sistema de filtração e da bomba da casa de máquinas.',
     installGuidelines: 'Conectar a caixa de controle a uma tomada segura a pelo menos 3,5 metros da borda. Limpar o cesto filtrante com jato d’água após cada ciclo.',
-    price: null,
-    lastPriceUpdate: null,
+    price: 4500.00,
+    lastPriceUpdate: '2026-10-09',
+    stripePaymentUrl: 'https://buy.stripe.com/test_28EfZj4XageFctbgBccV20c',
     marketplaceLinks: [
       {
         marketplaceId: 'mercadoLivre',
@@ -130,17 +133,17 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'refletor-led-astralpool-lumiplus-v1',
-    name: 'Refletor Subaquático LED LumiPlus AstralPool V1 Inox',
+    name: 'Projetor LED Subaquático 18W',
     brand: 'AstralPool',
     category: 'iluminacao',
-    categoryName: 'Iluminação',
+    categoryName: 'Iluminação LED',
     sku: 'AP-LUM-V1',
     description: 'Projetor LED subaquático de alta luminosidade com acabamento frontal em aço inoxidável AISI 316. Garante ampla dispersão de feixe luminoso e alta economia de energia em comparação às lâmpadas halógenas convencionais.',
     images: [
       '/images/product_led_lighting_1791514764896.jpg',
     ],
     specs: [
-      { label: 'Potência de consumo', value: '16 W' },
+      { label: 'Potência de consumo', value: '18 W' },
       { label: 'Fluxo luminoso', value: '1.485 lúmens' },
       { label: 'Alimentação', value: '12V AC (requer transformador isolador)' },
       { label: 'Material da moldura', value: 'Aço Inox AISI 316 (resistente à corrosão)' },
@@ -153,8 +156,9 @@ export const PRODUCTS: Product[] = [
     ],
     compatibility: 'Compatível com caixas de comando e transformadores 12V AstralPool.',
     installGuidelines: 'Deve operar permanentemente submerso para refrigeração adequada. Utilizar caixa de passagem vedada e fiação com bitola compatível com a distância.',
-    price: null,
-    lastPriceUpdate: null,
+    price: 350.00,
+    lastPriceUpdate: '2026-10-09',
+    stripePaymentUrl: 'https://buy.stripe.com/test_28E6oJgFS7I9bp7et4cV20d',
     marketplaceLinks: [
       {
         marketplaceId: 'mercadoLivre',
@@ -170,10 +174,10 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'gerador-cloro-astralpool-smart-next-12',
-    name: 'Gerador de Cloro por Eletrólise Salina AstralPool Smart Next 12',
+    name: 'Gerador de Cloro por Sal',
     brand: 'AstralPool',
     category: 'geradores-cloro',
-    categoryName: 'Geradores de Cloro',
+    categoryName: 'Tratamento de Água',
     sku: 'AP-SNEXT-12',
     description: 'Sistema avançado de eletrólise salina para desinfecção contínua da água da piscina. Gera cloro natural a partir do sal dissolvido na água, evitando irritação nos olhos, ressecamento da pele e manuseio de cloro concentrado.',
     images: [
@@ -192,8 +196,9 @@ export const PRODUCTS: Product[] = [
     ],
     compatibility: 'Instalação direta na tubulação de retorno de 50 mm.',
     installGuidelines: 'Montar a célula de eletrólise após o filtro e após o sistema de aquecimento, sempre com fluxo de água confirmado.',
-    price: null,
-    lastPriceUpdate: null,
+    price: 2800.00,
+    lastPriceUpdate: '2026-10-09',
+    stripePaymentUrl: 'https://buy.stripe.com/test_cNiaEZ4Xae6x8cV0CecV20e',
     marketplaceLinks: [
       {
         marketplaceId: 'mercadoLivre',
@@ -209,7 +214,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'bomba-calor-astralpool-pro-heat-inverter',
-    name: 'Bomba de Calor AstralPool Pro Heat Inverter 11 kW',
+    name: 'Trocador de Calor para Piscina',
     brand: 'AstralPool',
     category: 'aquecimento',
     categoryName: 'Aquecimento',
@@ -231,8 +236,9 @@ export const PRODUCTS: Product[] = [
     ],
     compatibility: 'Compatível com sistemas de automação e comandos remotos.',
     installGuidelines: 'Posicionar ao ar livre com circulação livre de ar. Instalação com bypass hidráulico na tubulação de retorno após o filtro.',
-    price: null,
-    lastPriceUpdate: null,
+    price: 6200.00,
+    lastPriceUpdate: '2026-10-09',
+    stripePaymentUrl: 'https://buy.stripe.com/test_28E8wRfBO1jL78R98KcV20f',
     marketplaceLinks: [
       {
         marketplaceId: 'mercadoLivre',

@@ -59,6 +59,7 @@ export interface Product {
   installGuidelines?: string;
   price: number | null; // null if not confirmed: "Consulte o preço no canal de compra"
   lastPriceUpdate?: string | null;
+  stripePaymentUrl?: string; // Link direto de checkout / pagamento Stripe
   marketplaceLinks: ProductMarketplaceLink[];
   isPublished: boolean;
   featured?: boolean;

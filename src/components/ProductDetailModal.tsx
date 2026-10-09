@@ -11,10 +11,11 @@ import {
   Share2,
   Copy,
   Check,
+  CreditCard,
 } from 'lucide-react';
 import { useConfig } from '../context/ConfigContext';
 import { MarketplaceId } from '../types';
-import { trackMarketplaceRedirect } from '../utils/analytics';
+import { trackMarketplaceRedirect, trackStripeCheckout } from '../utils/analytics';
 
 export const ProductDetailModal: React.FC = () => {
   const {
@@ -186,32 +187,53 @@ export const ProductDetailModal: React.FC = () => {
 
                 <p className="text-[11px] text-slate-500 leading-relaxed">
                   Pagamento via <strong className="text-slate-700">PIX</strong> ou{' '}
-                  <strong className="text-slate-700">Cartão de Crédito</strong> disponível conforme a política de cada marketplace parceiro.
+                  <strong className="text-slate-700">Cartão de Crédito</strong>.
                 </p>
 
+                {/* Stripe Direct Buy Button */}
+                {product.stripePaymentUrl && (
+                  <div className="pt-1">
+                    <a
+                      href={product.stripePaymentUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={() => {
+                        trackStripeCheckout(product.name, product.price, product.stripePaymentUrl);
+                      }}
+                      className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-[#00A6D6] hover:bg-[#0092bd] active:bg-[#073B66] text-white rounded-xl text-sm font-bold shadow-xs hover:shadow transition-all cursor-pointer"
+                    >
+                      <CreditCard className="w-4 h-4 shrink-0" />
+                      <span>Comprar Agora</span>
+                      <ExternalLink className="w-3.5 h-3.5 opacity-90 shrink-0" />
+                    </a>
+                  </div>
+                )}
+
                 {/* Marketplace Buy Options */}
-                <div className="pt-2 space-y-2">
-                  <span className="text-xs font-semibold text-slate-700 block">
-                    Canais de Compra Disponíveis:
-                  </span>
-                  {product.marketplaceLinks.map((link) => {
-                    const mp = config.marketplaces[link.marketplaceId];
-                    if (!mp) return null;
-                    return (
-                      <button
-                        key={link.marketplaceId}
-                        onClick={() => handleBuyMarketplace(link.url, link.marketplaceId)}
-                        className="w-full flex items-center justify-between px-4 py-2.5 bg-white hover:bg-[#E8F7FC] border border-slate-200 hover:border-[#00A6D6] rounded-xl text-xs font-semibold text-[#073B66] transition-all cursor-pointer shadow-2xs"
-                      >
-                        <span className="flex items-center gap-2">
-                          <Store className="w-4 h-4 text-[#00A6D6]" />
-                          <span>Comprar via {mp.name}</span>
-                        </span>
-                        <ExternalLink className="w-3.5 h-3.5 text-slate-400" />
-                      </button>
-                    );
-                  })}
-                </div>
+                {product.marketplaceLinks.length > 0 && (
+                  <div className="pt-2 space-y-2">
+                    <span className="text-xs font-semibold text-slate-700 block">
+                      {product.stripePaymentUrl ? 'Ou compre nos Marketplaces:' : 'Canais de Compra Disponíveis:'}
+                    </span>
+                    {product.marketplaceLinks.map((link) => {
+                      const mp = config.marketplaces[link.marketplaceId];
+                      if (!mp) return null;
+                      return (
+                        <button
+                          key={link.marketplaceId}
+                          onClick={() => handleBuyMarketplace(link.url, link.marketplaceId)}
+                          className="w-full flex items-center justify-between px-4 py-2.5 bg-white hover:bg-[#E8F7FC] border border-slate-200 hover:border-[#00A6D6] rounded-xl text-xs font-semibold text-[#073B66] transition-all cursor-pointer shadow-2xs"
+                        >
+                          <span className="flex items-center gap-2">
+                            <Store className="w-4 h-4 text-[#00A6D6]" />
+                            <span>Comprar via {mp.name}</span>
+                          </span>
+                          <ExternalLink className="w-3.5 h-3.5 text-slate-400" />
+                        </button>
+                      );
+                    })}
+                  </div>
+                )}
 
                 {/* WhatsApp Consultation Action */}
                 <div className="pt-2">

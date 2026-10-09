@@ -44,7 +44,7 @@ interface ConfigContextType {
 const ConfigContext = createContext<ConfigContextType | undefined>(undefined);
 
 const STORAGE_KEY_CONFIG = 'fluida_site_config_v1';
-const STORAGE_KEY_PRODUCTS = 'fluida_products_v2';
+const STORAGE_KEY_PRODUCTS = 'fluida_products_v3';
 
 export const ConfigProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [config, setConfig] = useState<SiteConfig>(() => {
@@ -64,10 +64,16 @@ export const ConfigProvider: React.FC<{ children: React.ReactNode }> = ({ childr
       const saved = localStorage.getItem(STORAGE_KEY_PRODUCTS);
       if (saved) {
         const parsed: Product[] = JSON.parse(saved);
-        return parsed.map((p) => ({
-          ...p,
-          images: p.images.map((img) => img.replace('/src/assets/images/', '/images/')),
-        }));
+        return parsed.map((p) => {
+          const defaultProd = PRODUCTS.find((dp) => dp.id === p.id);
+          return {
+            ...p,
+            name: defaultProd?.name || p.name,
+            stripePaymentUrl: p.stripePaymentUrl || defaultProd?.stripePaymentUrl,
+            price: p.price ?? defaultProd?.price ?? null,
+            images: p.images.map((img) => img.replace('/src/assets/images/', '/images/')),
+          };
+        });
       }
     } catch {
       // fallback to initial

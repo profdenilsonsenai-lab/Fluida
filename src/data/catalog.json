@@ -1,0 +1,181 @@
+[
+  {
+    "id": "motobomba-astralpool-sena-1cv",
+    "name": "Bomba de Filtro AstralPool",
+    "brand": "AstralPool",
+    "category": "Equipamentos",
+    "categorySlug": "motobombas",
+    "sku": "FL-SENA-100",
+    "description": "Motobomba centrífuga autoescorvante de alta vazão e baixo nível sonoro, fabricada em polipropileno com fibra de vidro. Projetada para circulação contínua e filtragem eficaz em piscinas residenciais.",
+    "images": [
+      "/images/product_motobomba_pool_1791514738449.jpg"
+    ],
+    "price": 1490.00,
+    "formattedPrice": "R$ 1.490,00",
+    "stripePaymentUrl": "https://buy.stripe.com/test_fZueVfcpC5A12SB98KcV20a",
+    "specs": [
+      { "label": "Potência nominal", "value": "1,0 CV (0,75 kW)" },
+      { "label": "Vazão recomendada", "value": "11,8 m³/h a 10 mca" },
+      { "label": "Tensão operacional", "value": "Monofásica 110V/220V com seletor" },
+      { "label": "Bitola de sucção/recalque", "value": "Conexões de 50 mm (1½\")" },
+      { "label": "Pré-filtro", "value": "Cesto com tampa transparente de abertura fácil" },
+      { "label": "Grau de proteção", "value": "IP55, isolamento Classe F" }
+    ],
+    "applications": [
+      "Piscinas residenciais de alvenaria, fibra e vinil de até 70.000 litros",
+      "Acionamento de cascatas e sistemas de aquecimento solar",
+      "Operação contínua com filtros de areia compatíveis"
+    ],
+    "compatibility": "Compatível com filtros de areia AstralPool de 500 mm a 600 mm de diâmetro.",
+    "isPublished": true,
+    "featured": true
+  },
+  {
+    "id": "filtro-areia-astralpool-cantabric-600",
+    "name": "Filtro de Areia D300",
+    "brand": "AstralPool",
+    "category": "Filtros",
+    "categorySlug": "filtros",
+    "sku": "FL-CANT-600",
+    "description": "Tanque filtrante monobloco injetado em resina termoplástica de alta resistência mecânica e proteção contra radiação UV. Acompanha válvula seletora de 6 vias para filtragem, retrolavagem, enxágue, recirculação, esgotamento e fechamento.",
+    "images": [
+      "/images/product_pool_filter_1791514747211.jpg"
+    ],
+    "price": 890.00,
+    "formattedPrice": "R$ 890,00",
+    "stripePaymentUrl": "https://buy.stripe.com/test_5kQ4gB9dq0fH78R84GcV20b",
+    "specs": [
+      { "label": "Diâmetro do tanque", "value": "600 mm" },
+      { "label": "Vazão máxima de projeto", "value": "14,0 m³/h" },
+      { "label": "Volume máximo da piscina", "value": "Até 84.000 L (em ciclo de 6 horas)" },
+      { "label": "Carga de areia necessária", "value": "150 kg (areia sílica ou vidro filtrante)" },
+      { "label": "Pressão máxima de serviço", "value": "2,5 kgf/cm² (bar)" },
+      { "label": "Válvula seletora", "value": "Topo 1½\" com manômetro embutido" }
+    ],
+    "applications": [
+      "Piscinas residenciais e semi-olímpicas com demanda intensa de filtração",
+      "Tratamento físico com areia sílica graduada ou vidro ativado"
+    ],
+    "compatibility": "Dimensionamento ideal para motobombas de 0,75 CV a 1,0 CV.",
+    "isPublished": true,
+    "featured": true
+  },
+  {
+    "id": "robo-limpador-zodiac-tornax-rt3200",
+    "name": "Robô Aspirador de Piscina",
+    "brand": "Zodiac",
+    "category": "Limpeza Automatizada",
+    "categorySlug": "robos-piscinas",
+    "sku": "ZD-TNX-3200",
+    "description": "Robô autônomo elétrico desenvolvido para limpeza eficiente de fundo e paredes. Sistema de deslocamento inteligente com esteiras tracionadas, peso ultraleve para fácil retirada da água e acesso superior rápido ao cesto de filtro.",
+    "images": [
+      "/images/product_robot_cleaner_1791514755912.jpg"
+    ],
+    "price": 4500.00,
+    "formattedPrice": "R$ 4.500,00",
+    "stripePaymentUrl": "https://buy.stripe.com/test_28EfZj4XageFctbgBccV20c",
+    "specs": [
+      { "label": "Zonas de limpeza", "value": "Fundo e paredes" },
+      { "label": "Dimensão máxima da piscina", "value": "Até 9 x 4 metros" },
+      { "label": "Ciclo de trabalho", "value": "2,5 horas (ciclo único otimizado)" },
+      { "label": "Capacidade do filtro", "value": "3 litros com malha de 100 micras" },
+      { "label": "Comprimento do cabo", "value": "16,5 metros flutuante" },
+      { "label": "Peso do equipamento", "value": "5,5 kg (leve e ergonômico)" }
+    ],
+    "applications": [
+      "Piscinas enterradas e elevadas de paredes rígidas",
+      "Revestimentos: pastilha, fibra de vidro, vinil e PVC reforçado"
+    ],
+    "compatibility": "Funciona de forma independente do sistema de filtração e da bomba da casa de máquinas.",
+    "isPublished": true,
+    "featured": true
+  },
+  {
+    "id": "refletor-led-astralpool-lumiplus-v1",
+    "name": "Projetor LED Subaquático 18W",
+    "brand": "AstralPool",
+    "category": "Iluminação LED",
+    "categorySlug": "iluminacao",
+    "sku": "AP-LUM-V1",
+    "description": "Projetor LED subaquático de alta luminosidade com acabamento frontal em aço inoxidável AISI 316. Garante ampla dispersão de feixe luminoso e alta economia de energia em comparação às lâmpadas halógenas convencionais.",
+    "images": [
+      "/images/product_led_lighting_1791514764896.jpg"
+    ],
+    "price": 350.00,
+    "formattedPrice": "R$ 350,00",
+    "stripePaymentUrl": "https://buy.stripe.com/test_28E6oJgFS7I9bp7et4cV20d",
+    "specs": [
+      { "label": "Potência de consumo", "value": "18 W" },
+      { "label": "Fluxo luminoso", "value": "1.485 lúmens" },
+      { "label": "Alimentação", "value": "12V AC (requer transformador isolador)" },
+      { "label": "Material da moldura", "value": "Aço Inox AISI 316 (resistente à corrosão)" },
+      { "label": "Vida útil estimada", "value": "Até 50.000 horas" },
+      { "label": "Grau de proteção", "value": "IPX8 totalmente submersível" }
+    ],
+    "applications": [
+      "Piscinas novas ou reforma com nicho padrão de 1½\"",
+      "Piscinas de concreto azulejadas, vinil ou fibra"
+    ],
+    "compatibility": "Compatível com caixas de comando e transformadores 12V AstralPool.",
+    "isPublished": true,
+    "featured": true
+  },
+  {
+    "id": "gerador-cloro-astralpool-smart-next-12",
+    "name": "Gerador de Cloro por Sal",
+    "brand": "AstralPool",
+    "category": "Tratamento de Água",
+    "categorySlug": "geradores-cloro",
+    "sku": "AP-SNEXT-12",
+    "description": "Sistema avançado de eletrólise salina para desinfecção contínua da água da piscina. Gera cloro natural a partir do sal dissolvido na água, evitando irritação nos olhos, ressecamento da pele e manuseio de cloro concentrado.",
+    "images": [
+      "/images/product_motobomba_pool_1791514738449.jpg"
+    ],
+    "price": 2800.00,
+    "formattedPrice": "R$ 2.800,00",
+    "stripePaymentUrl": "https://buy.stripe.com/test_cNiaEZ4Xae6x8cV0CecV20e",
+    "specs": [
+      { "label": "Produção nominal de cloro", "value": "12 g/h de cloro livre ativo" },
+      { "label": "Volume máximo da piscina", "value": "Até 50.000 litros" },
+      { "label": "Concentração de sal recomendada", "value": "4 a 5 g/L (água ligeiramente salobra)" },
+      { "label": "Célula eletrolítica", "value": "Placas de titânio autolimpantes por inversão de polaridade" },
+      { "label": "Painel", "value": "Display digital com alertas de nível de sal e fluxo de água" }
+    ],
+    "applications": [
+      "Piscinas residenciais que buscam água pura, suave e sem cheiro forte de químicos",
+      "Famílias com crianças e pessoas sensíveis ao cloro convencional"
+    ],
+    "compatibility": "Instalação direta na tubulação de retorno de 50 mm.",
+    "isPublished": true,
+    "featured": false
+  },
+  {
+    "id": "bomba-calor-astralpool-pro-heat-inverter",
+    "name": "Trocador de Calor para Piscina",
+    "brand": "AstralPool",
+    "category": "Aquecimento",
+    "categorySlug": "aquecimento",
+    "sku": "AP-PHEAT-11K",
+    "description": "Trocador de calor com tecnologia Full-Inverter e fluido refrigerante ecológico R32. Ajusta automaticamente a rotação do compressor e ventilador para maximizar o COP (coeficiente de desempenho) com baixíssimo ruído.",
+    "images": [
+      "/images/product_pool_filter_1791514747211.jpg"
+    ],
+    "price": 6200.00,
+    "formattedPrice": "R$ 6.200,00",
+    "stripePaymentUrl": "https://buy.stripe.com/test_28E8wRfBO1jL78R98KcV20f",
+    "specs": [
+      { "label": "Capacidade térmica", "value": "11,0 kW (ar 27°C / água 27°C)" },
+      { "label": "COP máximo", "value": "Até 12,5 em regime econômico" },
+      { "label": "Compressor", "value": "Twin-Rotary DC Inverter" },
+      { "label": "Condensador", "value": "Titânio em espiral (anticorrosão, apto a piscinas salinizadas)" },
+      { "label": "Gás refrigerante", "value": "R32 com baixo potencial de aquecimento global" }
+    ],
+    "applications": [
+      "Piscinas residenciais de até 45.000 litros com capa térmica",
+      "Uso durante todas as estações do ano com temperatura regulável"
+    ],
+    "compatibility": "Compatível com sistemas de automação e comandos remotos.",
+    "isPublished": true,
+    "featured": false
+  }
+]
