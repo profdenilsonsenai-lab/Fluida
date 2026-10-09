@@ -21,6 +21,9 @@ export const Footer: React.FC = () => {
     openLegalModal,
     openConfigDrawer,
     setSelectedCategory,
+    openProjectModal,
+    openAdvisoryModal,
+    openTrainingModal,
   } = useConfig();
 
   const handleCategoryClick = (catId: string) => {
@@ -107,22 +110,36 @@ export const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Col 4: Mais Categorias & Guia */}
+          {/* Col 4: Soluções & Serviços Técnicos */}
           <div className="space-y-3">
             <h4 className="text-xs font-bold text-white uppercase tracking-wider">
-              Soluções & Guia
+              Serviços & Projeto
             </h4>
             <ul className="space-y-2 text-xs text-slate-300">
-              {CATEGORIES.slice(6).map((cat) => (
-                <li key={cat.id}>
-                  <button
-                    onClick={() => handleCategoryClick(cat.id)}
-                    className="hover:text-[#00A6D6] transition-colors text-left cursor-pointer"
-                  >
-                    {cat.name}
-                  </button>
-                </li>
-              ))}
+              <li>
+                <button
+                  onClick={openProjectModal}
+                  className="hover:text-[#35C6A4] transition-colors text-left cursor-pointer flex items-center gap-1.5 font-medium"
+                >
+                  <span>Dimensionar Seu Projeto</span>
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={openAdvisoryModal}
+                  className="hover:text-[#35C6A4] transition-colors text-left cursor-pointer flex items-center gap-1.5"
+                >
+                  <span>Assessoria Técnica Especializada</span>
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={openTrainingModal}
+                  className="hover:text-[#35C6A4] transition-colors text-left cursor-pointer flex items-center gap-1.5"
+                >
+                  <span>Treinamentos & Cursos</span>
+                </button>
+              </li>
               <li className="pt-2 border-t border-white/10">
                 <a
                   href="#guia"

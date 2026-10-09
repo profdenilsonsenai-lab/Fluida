@@ -13,6 +13,9 @@ interface ConfigContextType {
   activeProductModal: Product | null;
   activeLegalModal: 'privacidade' | 'termos' | 'empresa' | null;
   activeGuideModal: string | null;
+  activeProjectModal: boolean;
+  activeAdvisoryModal: boolean;
+  activeTrainingModal: boolean;
   searchQuery: string;
   selectedCategory: string;
   selectedBrand: string;
@@ -27,6 +30,12 @@ interface ConfigContextType {
   closeLegalModal: () => void;
   openGuideModal: (guideId: string) => void;
   closeGuideModal: () => void;
+  openProjectModal: () => void;
+  closeProjectModal: () => void;
+  openAdvisoryModal: () => void;
+  closeAdvisoryModal: () => void;
+  openTrainingModal: () => void;
+  closeTrainingModal: () => void;
   triggerWhatsApp: (productName?: string) => void;
   closeWhatsAppModal: () => void;
   updateConfig: (newConfig: Partial<SiteConfig>) => void;
@@ -75,6 +84,9 @@ export const ConfigProvider: React.FC<{ children: React.ReactNode }> = ({ childr
   const [activeProductModal, setActiveProductModal] = useState<Product | null>(null);
   const [activeLegalModal, setActiveLegalModal] = useState<'privacidade' | 'termos' | 'empresa' | null>(null);
   const [activeGuideModal, setActiveGuideModal] = useState<string | null>(null);
+  const [activeProjectModal, setActiveProjectModal] = useState(false);
+  const [activeAdvisoryModal, setActiveAdvisoryModal] = useState(false);
+  const [activeTrainingModal, setActiveTrainingModal] = useState(false);
 
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
@@ -199,6 +211,15 @@ export const ConfigProvider: React.FC<{ children: React.ReactNode }> = ({ childr
         closeLegalModal: () => setActiveLegalModal(null),
         openGuideModal: (id) => setActiveGuideModal(id),
         closeGuideModal: () => setActiveGuideModal(null),
+        openProjectModal: () => setActiveProjectModal(true),
+        closeProjectModal: () => setActiveProjectModal(false),
+        openAdvisoryModal: () => setActiveAdvisoryModal(true),
+        closeAdvisoryModal: () => setActiveAdvisoryModal(false),
+        openTrainingModal: () => setActiveTrainingModal(true),
+        closeTrainingModal: () => setActiveTrainingModal(false),
+        activeProjectModal,
+        activeAdvisoryModal,
+        activeTrainingModal,
         triggerWhatsApp,
         closeWhatsAppModal: () => {
           setActiveWhatsAppModal(false);

@@ -8,6 +8,7 @@ import { ConfigProvider } from './context/ConfigContext';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { CategoriesSection } from './components/CategoriesSection';
+import { ServicesSection } from './components/ServicesSection';
 import { CatalogSection } from './components/CatalogSection';
 import { BenefitsSection } from './components/BenefitsSection';
 import { MarketplacesSection } from './components/MarketplacesSection';
@@ -19,6 +20,9 @@ import { WhatsAppModal } from './components/WhatsAppModal';
 import { GuideDetailModal } from './components/GuideDetailModal';
 import { LegalModals } from './components/LegalModals';
 import { ConfigDrawer } from './components/ConfigDrawer';
+import { ProjectCalculatorModal } from './components/ProjectCalculatorModal';
+import { AdvisoryModal } from './components/AdvisoryModal';
+import { TrainingModal } from './components/TrainingModal';
 
 export default function App() {
   return (
@@ -31,6 +35,7 @@ export default function App() {
         <main className="flex-1 flex flex-col">
           <Hero />
           <CategoriesSection />
+          <ServicesSection />
           <CatalogSection />
           <BenefitsSection />
           <MarketplacesSection />
@@ -47,6 +52,9 @@ export default function App() {
         <GuideDetailModal />
         <LegalModals />
         <ConfigDrawer />
+        <ProjectCalculatorModal />
+        <AdvisoryModal />
+        <TrainingModal />
       </div>
     </ConfigProvider>
   );

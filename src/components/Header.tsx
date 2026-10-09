@@ -12,6 +12,9 @@ import {
   Layers,
   HelpCircle,
   ExternalLink,
+  Calculator,
+  ClipboardCheck,
+  GraduationCap,
 } from 'lucide-react';
 import { BrandLogo } from './BrandLogo';
 import { useConfig } from '../context/ConfigContext';
@@ -26,6 +29,9 @@ export const Header: React.FC = () => {
     searchQuery,
     setSearchQuery,
     setSelectedCategory,
+    openProjectModal,
+    openAdvisoryModal,
+    openTrainingModal,
   } = useConfig();
 
   const [messageIdx, setMessageIdx] = useState(0);
@@ -202,6 +208,36 @@ export const Header: React.FC = () => {
               Ver produtos
             </button>
 
+            {/* Botão Seu Projeto */}
+            <button
+              onClick={openProjectModal}
+              className="text-[#073B66] hover:text-[#00A6D6] font-semibold transition-colors whitespace-nowrap cursor-pointer flex items-center gap-1.5 px-2.5 py-1 bg-[#E8F7FC] hover:bg-[#d5f1fa] rounded-lg border border-[#00A6D6]/30"
+              title="Calcule e dimensione os equipamentos da sua piscina"
+            >
+              <Calculator className="w-3.5 h-3.5 text-[#00A6D6]" />
+              <span>Seu Projeto</span>
+            </button>
+
+            {/* Botão Assessoria */}
+            <button
+              onClick={openAdvisoryModal}
+              className="text-slate-700 hover:text-[#073B66] transition-colors whitespace-nowrap cursor-pointer flex items-center gap-1.5"
+              title="Solicite assessoria técnica especializada"
+            >
+              <ClipboardCheck className="w-3.5 h-3.5 text-[#35C6A4]" />
+              <span>Assessoria</span>
+            </button>
+
+            {/* Botão Treinamento */}
+            <button
+              onClick={openTrainingModal}
+              className="text-slate-700 hover:text-[#073B66] transition-colors whitespace-nowrap cursor-pointer flex items-center gap-1.5"
+              title="Conheça nossos treinamentos e capacitações"
+            >
+              <GraduationCap className="w-3.5 h-3.5 text-[#00A6D6]" />
+              <span>Treinamento</span>
+            </button>
+
             <button
               onClick={() => scrollToSection('marketplaces')}
               className="text-slate-700 hover:text-[#073B66] transition-colors whitespace-nowrap cursor-pointer"
@@ -282,6 +318,49 @@ export const Header: React.FC = () => {
               <span>Guia da Piscina</span>
               <HelpCircle className="w-4 h-4 text-slate-400" />
             </button>
+
+            {/* Ações Técnicas e Serviços no Mobile */}
+            <div className="pt-2 grid grid-cols-1 gap-1.5">
+              <button
+                onClick={() => {
+                  setMobileMenuOpen(false);
+                  openProjectModal();
+                }}
+                className="w-full text-left py-2 px-3 rounded-lg text-xs font-semibold text-[#073B66] bg-[#E8F7FC] flex items-center justify-between"
+              >
+                <span className="flex items-center gap-2">
+                  <Calculator className="w-4 h-4 text-[#00A6D6]" />
+                  <span>Seu Projeto (Dimensionamento)</span>
+                </span>
+                <span className="text-[10px] text-[#00A6D6] font-bold">Simular</span>
+              </button>
+
+              <button
+                onClick={() => {
+                  setMobileMenuOpen(false);
+                  openAdvisoryModal();
+                }}
+                className="w-full text-left py-2 px-3 rounded-lg text-xs font-semibold text-slate-700 bg-slate-50 flex items-center justify-between"
+              >
+                <span className="flex items-center gap-2">
+                  <ClipboardCheck className="w-4 h-4 text-[#35C6A4]" />
+                  <span>Assessoria Técnica Especializada</span>
+                </span>
+              </button>
+
+              <button
+                onClick={() => {
+                  setMobileMenuOpen(false);
+                  openTrainingModal();
+                }}
+                className="w-full text-left py-2 px-3 rounded-lg text-xs font-semibold text-slate-700 bg-slate-50 flex items-center justify-between"
+              >
+                <span className="flex items-center gap-2">
+                  <GraduationCap className="w-4 h-4 text-[#00A6D6]" />
+                  <span>Treinamentos & Capacitação</span>
+                </span>
+              </button>
+            </div>
           </div>
 
           <div className="pt-2 border-t border-slate-100">
