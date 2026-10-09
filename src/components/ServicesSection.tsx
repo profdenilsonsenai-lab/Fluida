@@ -54,25 +54,25 @@ export const ServicesSection: React.FC = () => {
               </div>
 
               <h3 className="text-lg sm:text-xl font-bold font-['Plus_Jakarta_Sans',sans-serif] text-white mb-2 leading-snug">
-                Seu Projeto
+                Seu Projeto — Construção & Dimensionamento
               </h3>
 
               <p className="text-xs sm:text-sm text-slate-200 leading-relaxed mb-6">
-                Calcule o volume exato da sua piscina (em litros e m³), a vazão necessária e receba a indicação da motobomba e filtro perfeitos para o seu espaço.
+                Tudo o que você precisa para construir sua piscina: formulário completo de obra (terreno, prainha, drenos anti-turbilhão ABNT, casa de máquinas) ou simulador rápido de motobomba e filtro.
               </p>
 
               <div className="space-y-1.5 text-xs text-slate-200 pt-2 border-t border-white/15">
+                <div className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#35C6A4]" />
+                  <span>Formulário de pré-obra e hidráulica</span>
+                </div>
                 <div className="flex items-center gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#35C6A4]" />
                   <span>Cálculo de volume e vazão por ABNT</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#35C6A4]" />
-                  <span>Recomendação de bomba e filtro</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#35C6A4]" />
-                  <span>Envio direto do briefing para o WhatsApp</span>
+                  <span>Envio do briefing para a Engenharia FLUIDA</span>
                 </div>
               </div>
             </div>
@@ -82,7 +82,7 @@ export const ServicesSection: React.FC = () => {
                 onClick={openProjectModal}
                 className="w-full py-3 px-4 bg-[#00A6D6] hover:bg-[#0091bb] text-white font-semibold rounded-xl text-xs sm:text-sm flex items-center justify-center gap-2 transition-all cursor-pointer shadow-xs"
               >
-                <span>Calcular Meu Projeto Agora</span>
+                <span>Planejar Construção / Simular Projeto</span>
                 <ArrowRight className="w-4 h-4" />
               </button>
             </div>
@@ -135,7 +135,7 @@ export const ServicesSection: React.FC = () => {
             </div>
           </div>
 
-          {/* Card 3: Treinamentos */}
+          {/* Card 3: Treinamentos e Curso de Piscineiro */}
           <div className="bg-[#F8FBFC] rounded-2xl border border-slate-200/90 p-6 sm:p-7 flex flex-col justify-between hover:border-[#00A6D6]/50 transition-all duration-200 shadow-2xs">
             <div>
               <div className="flex items-center justify-between mb-5">
@@ -143,30 +143,30 @@ export const ServicesSection: React.FC = () => {
                   <GraduationCap className="w-6 h-6 text-[#35C6A4]" />
                 </div>
                 <span className="text-[11px] font-semibold text-[#073B66] uppercase tracking-wider bg-slate-100 px-2.5 py-1 rounded-md">
-                  Capacitação Prática
+                  Curso de Piscineiro
                 </span>
               </div>
 
               <h3 className="text-lg sm:text-xl font-bold font-['Plus_Jakarta_Sans',sans-serif] text-[#073B66] mb-2 leading-snug">
-                Treinamentos & Cursos
+                Curso de Piscineiro & Cursos
               </h3>
 
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-6">
-                Capacitação profissional para tratadores, piscineiros autônomos, zeladores e proprietários que buscam domínio das operações hidráulicas e sanitárias.
+                Formação completa de Piscineiro Profissional (rotinas, precificação de clientes, química da água e manutenção de bombas) e módulos técnicos de especialização.
               </p>
 
               <div className="space-y-1.5 text-xs text-slate-600 pt-2 border-t border-slate-200/70">
                 <div className="flex items-center gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#35C6A4]" />
-                  <span>Manutenção de motobombas e filtros</span>
+                  <span>Curso de Piscineiro & Tratador (16h)</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#35C6A4]" />
-                  <span>Química da água e dosagem econômica</span>
+                  <span>Química da água, decantação e bombas</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#35C6A4]" />
-                  <span>Certificado e material de apoio</span>
+                  <span>Certificado profissional de conclusão</span>
                 </div>
               </div>
             </div>
@@ -176,7 +176,7 @@ export const ServicesSection: React.FC = () => {
                 onClick={openTrainingModal}
                 className="w-full py-3 px-4 bg-white hover:bg-slate-100 border border-slate-300 text-[#073B66] font-semibold rounded-xl text-xs sm:text-sm flex items-center justify-center gap-2 transition-all cursor-pointer shadow-2xs"
               >
-                <span>Conhecer os Treinamentos</span>
+                <span>Ver Curso de Piscineiro & Turmas</span>
                 <ArrowRight className="w-4 h-4" />
               </button>
             </div>
